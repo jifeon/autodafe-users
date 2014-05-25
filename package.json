@@ -1,0 +1,39 @@
+{
+  "name": "autodafe-users",
+  "description": "A component for autodafe providing user managment",
+  "keywords": [
+    "autodafe",
+    "users"
+  ],
+  "homepage": "http://autodafe.ws",
+  "version": "1.0.0-alpha.0",
+  "author": "Andrey Balakirev <balakirev.andrey@gmail.com>",
+  "main": "./lib/UsersManager",
+  "bugs": {
+    "url": "https://github.com/jifeon/autodafe-users/issues",
+    "email": "balakirev.andrey@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jifeon/autodafe-users.git"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "test": "vows tests/vows/* --spec"
+  },
+  "devDependencies": {
+    "vows": ">=0.5.8"
+  },
+  "peerDeendencies": {
+    "autodafe": "1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "vow": "~0.4.3",
+    "shortid": "~2.0.0"
+  }
+}
