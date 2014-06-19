@@ -32,5 +32,10 @@ var HttpAuthorizer = module.exports = Authorizer.extend(/**@lends HttpAuthorizer
     setUserId: function (request, id) {
         request.setCookie('autodafe-users-id', id);
         return vow.fulfill(true);
+    },
+
+    unsetUserId: function (request) {
+        request.removeCookie('autodafe-users-id');
+        return vow.fulfill(true);
     }
 });
